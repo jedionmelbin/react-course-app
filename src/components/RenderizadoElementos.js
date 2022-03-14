@@ -1,4 +1,13 @@
 import {Component} from "react";
+import data from '../helpers/data.json'
+
+function ElementoLista(props){
+    return (
+      <li>
+          <a href={props.el.web} target="_blank">{props.el.name}</a>
+      </li>
+    );
+}
 
 export default class RenderizadoElementos extends Component {
     constructor(props) {
@@ -9,6 +18,7 @@ export default class RenderizadoElementos extends Component {
     }
 
     render() {
+        console.log(data);
         return (
             <div>
                 <h3>Renderizado de elementos</h3>
@@ -20,6 +30,14 @@ export default class RenderizadoElementos extends Component {
                         )
                     }
                 </ol>
+                <h3>Framwrowks FrontEnd javascript</h3>
+                <ul>
+                    {
+                        data.frameworks.map((element,index)=> (
+                            <ElementoLista key={index} el={element}/>
+                        ))
+                    }
+                </ul>
             </div>
         );
     }
