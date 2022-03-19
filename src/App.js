@@ -10,28 +10,32 @@ import EventosES6, {EventosES7, MasSobreEventos} from "./components/EventosES6";
 import ComunicacionComponentes from "./components/ComunicacionComponentes";
 import CicloVida from "./components/CicloVida";
 import AjaxApis from "./components/AjaxApis";
+import ContadorHooks from "./components/ContadorHooks";
+import ScrollHooks from "./components/ScrollHooks";
 
 function App() {
     return (
         <div className="App">
 
-            <Componente  mgs="Hola componente"/>
+            <Componente mgs="Hola componente"/>
             <Propiedades cadena="Esto es una cadena"
-                         arreglo={[1,2,3,5,6]}
+                         arreglo={[1, 2, 3, 5, 6]}
                          alementoReact={<i>Hola elemento</i>}
                          objeto={{nombre: "Jedion Melbin", email: "jedionmelbin@gmail.com"}}
-                         componentReact = {<Componente mgs="Mensaje de propiedad"/>}
+                         componentReact={<Componente mgs="Mensaje de propiedad"/>}
             />
             <Estado/>
-            <RenderizadoCondicional />
-            <RenderizadoElementos />
-            <Eventos />
+            <RenderizadoCondicional/>
+            <RenderizadoElementos/>
+            <Eventos/>
             <EventosES6/>
-            <EventosES7 />
-            <MasSobreEventos />
-            <ComunicacionComponentes />
-            <CicloVida />
-            <AjaxApis />
+            <EventosES7/>
+            <MasSobreEventos/>
+            <ComunicacionComponentes/>
+            <CicloVida/>
+            <AjaxApis/>
+            <ContadorHooks titulo="Contador de seguirdores"/>
+            <ScrollHooks/>
         </div>
     );
 }

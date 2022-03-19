@@ -38,7 +38,7 @@ export default class AjaxApis extends Component {
             });
         })
     }
-
+//Componentes basados en clase o hooks
     render() {
         return (
             <>
