@@ -12,6 +12,11 @@ import CicloVida from "./components/CicloVida";
 import AjaxApis from "./components/AjaxApis";
 import ContadorHooks from "./components/ContadorHooks";
 import ScrollHooks from "./components/ScrollHooks";
+import RelojHooks from "./components/RelojHooks";
+import AjaxHooks from "./components/AjaxHooks";
+import HooksPersonalizado from "./components/HooksPersonalizado";
+import Referencias from "./components/Referencias";
+import Formularios from "./components/formularios";
 
 function App() {
     return (
@@ -36,6 +41,13 @@ function App() {
             <AjaxApis/>
             <ContadorHooks titulo="Contador de seguirdores"/>
             <ScrollHooks/>
+            <RelojHooks/>
+            <AjaxHooks/>
+            <HooksPersonalizado/>
+            <Referencias/>
+            <hr/>
+            <Formularios/>
+            <hr/>
         </div>
     );
 }
