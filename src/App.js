@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Propiedades from "./components/Propiedades";
 import Componente from "./components/Componente";
@@ -17,6 +16,9 @@ import AjaxHooks from "./components/AjaxHooks";
 import HooksPersonalizado from "./components/HooksPersonalizado";
 import Referencias from "./components/Referencias";
 import Formularios from "./components/formularios";
+import Estilos from "./components/Estilos";
+import ComponenteEstilizado from "./components/ComponenteEstilizado";
+import Memorizar from "./memo/Memorizar";
 
 function App() {
     return (
@@ -48,6 +50,11 @@ function App() {
             <hr/>
             <Formularios/>
             <hr/>
+            <Estilos/>
+            <hr/>
+            <ComponenteEstilizado/>
+            <hr/>
+            <Memorizar/>
         </div>
     );
 }
